@@ -182,8 +182,11 @@ export default function Index() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {COMMANDS.map((cmd) => (
-                <button
+                <a
                   key={cmd.label}
+                  href={`https://t.me/kozhev83?start=${cmd.label.replace("/", "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="glass glass-hover neon-border-purple rounded-2xl p-4 text-left group"
                 >
                   <div className="flex items-start gap-3">
@@ -195,7 +198,7 @@ export default function Index() {
                       <div className="text-[hsl(215,20%,55%)] text-sm mt-0.5">{cmd.desc}</div>
                     </div>
                   </div>
-                </button>
+                </a>
               ))}
             </div>
 
@@ -257,21 +260,27 @@ export default function Index() {
                     <div className="font-oswald font-bold text-white text-lg">{GALLERY_IMAGES[selectedImage].label}</div>
                     <div className="text-[hsl(215,20%,55%)] text-sm">Создано НейроБотом · Стиль: Реализм</div>
                   </div>
-                  <button className="flex items-center gap-2 bg-[hsla(270,80%,65%,0.2)] text-[hsl(270,80%,75%)] border border-[hsla(270,80%,65%,0.4)] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[hsla(270,80%,65%,0.35)] transition-colors">
+                  <a
+                    href={selectedImage !== null ? GALLERY_IMAGES[selectedImage].url : "#"}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-[hsla(270,80%,65%,0.2)] text-[hsl(270,80%,75%)] border border-[hsla(270,80%,65%,0.4)] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[hsla(270,80%,65%,0.35)] transition-colors"
+                  >
                     <Icon name="Download" size={14} />
                     Скачать
-                  </button>
+                  </a>
                 </div>
               </div>
             )}
 
-            <div className="mt-4 glass rounded-2xl border border-dashed border-white/10 p-8 text-center hover:border-[hsla(270,80%,65%,0.4)] transition-colors cursor-pointer group">
+            <a href="https://t.me/kozhev83?start=generate" target="_blank" rel="noopener noreferrer" className="mt-4 glass rounded-2xl border border-dashed border-white/10 p-8 text-center hover:border-[hsla(270,80%,65%,0.4)] transition-colors cursor-pointer group block">
               <div className="w-12 h-12 rounded-2xl bg-[hsla(270,80%,65%,0.1)] flex items-center justify-center mx-auto mb-3 group-hover:bg-[hsla(270,80%,65%,0.2)] transition-colors">
                 <Icon name="Plus" size={24} className="text-[hsl(270,80%,75%)]" />
               </div>
               <div className="font-semibold text-white mb-1">Создать новое изображение</div>
               <div className="text-[hsl(215,20%,50%)] text-sm">Отправь запрос боту в Telegram</div>
-            </div>
+            </a>
           </div>
         )}
 
@@ -342,9 +351,9 @@ export default function Index() {
               </div>
             </div>
 
-            <button className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[hsl(270,80%,65%)] to-[hsl(320,80%,65%)] text-white font-oswald font-bold text-lg hover:scale-[1.02] transition-transform glow-purple">
+            <a href="https://t.me/kozhev83?start=settings" target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[hsl(270,80%,65%)] to-[hsl(320,80%,65%)] text-white font-oswald font-bold text-lg hover:scale-[1.02] transition-transform glow-purple block text-center">
               Сохранить настройки
-            </button>
+            </a>
           </div>
         )}
 
