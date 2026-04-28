@@ -204,10 +204,10 @@ export default function Index() {
                 <div className="font-oswald text-lg font-bold text-white">Открыть в Telegram</div>
                 <div className="text-[hsl(215,20%,55%)] text-sm">Начни прямо сейчас — это бесплатно</div>
               </div>
-              <button className="flex items-center gap-2 bg-gradient-to-r from-[hsl(180,80%,55%)] to-[hsl(210,80%,65%)] text-[hsl(240,15%,6%)] font-bold px-5 py-2.5 rounded-xl hover:scale-105 transition-transform text-sm">
+              <a href="https://t.me/kozhev83" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gradient-to-r from-[hsl(180,80%,55%)] to-[hsl(210,80%,65%)] text-[hsl(240,15%,6%)] font-bold px-5 py-2.5 rounded-xl hover:scale-105 transition-transform text-sm">
                 <Icon name="Send" size={16} />
                 Открыть
-              </button>
+              </a>
             </div>
           </div>
         )}
@@ -438,9 +438,9 @@ export default function Index() {
           <div className="text-3xl mb-3">🚀</div>
           <div className="font-oswald font-bold text-xl text-white mb-2">Попробуй бесплатно</div>
           <div className="text-[hsl(215,20%,55%)] text-sm mb-4">Первые 10 генераций — без оплаты</div>
-          <button className="bg-gradient-to-r from-[hsl(270,80%,65%)] via-[hsl(320,80%,65%)] to-[hsl(180,80%,55%)] text-white font-oswald font-bold px-8 py-3.5 rounded-xl hover:scale-105 transition-transform glow-purple text-lg">
+          <a href="https://t.me/kozhev83" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-[hsl(270,80%,65%)] via-[hsl(320,80%,65%)] to-[hsl(180,80%,55%)] text-white font-oswald font-bold px-8 py-3.5 rounded-xl hover:scale-105 transition-transform glow-purple text-lg">
             Запустить бота
-          </button>
+          </a>
         </div>
       </div>
     </div>
