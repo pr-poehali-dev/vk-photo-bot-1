@@ -406,7 +406,7 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <button className={`mt-4 w-full py-3 rounded-xl font-oswald font-bold text-base transition-all hover:scale-[1.02] ${
+                  <a href="https://t.me/kozhev83" target="_blank" rel="noopener noreferrer" className={`mt-4 w-full py-3 rounded-xl font-oswald font-bold text-base transition-all hover:scale-[1.02] text-center block ${
                     plan.color === "purple"
                       ? "bg-gradient-to-r from-[hsl(270,80%,65%)] to-[hsl(320,80%,65%)] text-white"
                       : plan.color === "cyan"
@@ -414,7 +414,7 @@ export default function Index() {
                       : "bg-[hsla(320,80%,65%,0.15)] text-[hsl(320,80%,75%)] border border-[hsla(320,80%,65%,0.4)] hover:bg-[hsla(320,80%,65%,0.25)]"
                   }`}>
                     Выбрать {plan.name}
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
