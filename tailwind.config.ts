@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1777384327399136353.html"
 	],
 	prefix: "",
 	theme: {
@@ -17,8 +18,16 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			golos: ['Golos Text', 'sans-serif'],
+			oswald: ['Oswald', 'sans-serif'],
+		},
 		extend: {
 			colors: {
+				'neon-purple': 'hsl(var(--neon-purple))',
+				'neon-cyan': 'hsl(var(--neon-cyan))',
+				'neon-pink': 'hsl(var(--neon-pink))',
+				'neon-orange': 'hsl(var(--neon-orange))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
