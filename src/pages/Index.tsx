@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
 const GALLERY_IMAGES = [
@@ -70,6 +71,7 @@ const PLANS = [
 type Tab = "commands" | "gallery" | "menu" | "payment";
 
 export default function Index() {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<Tab>("commands");
   const [activeStyle, setActiveStyle] = useState("Реализм");
   const [params, setParams] = useState<Record<string, string>>({
@@ -144,6 +146,16 @@ export default function Index() {
                 <div className="text-xs text-[hsl(215,20%,50%)] mt-0.5">{s.label}</div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <button
+              onClick={() => navigate("/generate")}
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl font-semibold text-base bg-gradient-to-r from-[hsl(270,80%,65%)] to-[hsl(320,80%,65%)] text-white glow-purple hover:opacity-90 transition-all duration-200"
+            >
+              <Icon name="Package" size={20} />
+              Создать фото товара
+            </button>
           </div>
         </div>
       </header>
