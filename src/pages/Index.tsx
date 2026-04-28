@@ -122,14 +122,14 @@ export default function Index() {
 
           <div className="animate-slide-up">
             <p className="text-xs font-oswald tracking-[0.3em] uppercase text-[hsl(180,80%,60%)] mb-2">
-              AI · Бот · Платформа
+              AI · Фото · Telegram
             </p>
             <h1 className="font-oswald text-5xl md:text-6xl font-bold mb-3 leading-none">
               <span className="shimmer-text">НЕЙРО</span>
-              <span className="text-white">БОТ</span>
+              <span className="text-white"> ФОТО КИМ</span>
             </h1>
             <p className="text-[hsl(215,20%,65%)] text-lg max-w-md mx-auto leading-relaxed">
-              Генерируй изображения с помощью ИИ прямо в Telegram. Быстро, красиво, безлимитно.
+              Генерируй уникальные фото с помощью ИИ прямо в Telegram. Быстро, красиво, безлимитно.
             </p>
           </div>
 
@@ -445,7 +445,7 @@ export default function Index() {
       <div className="max-w-2xl mx-auto px-4 pb-10">
         <div className="glass neon-border-purple rounded-2xl p-6 text-center">
           <div className="text-3xl mb-3">🚀</div>
-          <div className="font-oswald font-bold text-xl text-white mb-2">Попробуй бесплатно</div>
+          <div className="font-oswald font-bold text-xl text-white mb-2">Попробуй Нейро Фото КИМ бесплатно</div>
           <div className="text-[hsl(215,20%,55%)] text-sm mb-4">Первые 10 генераций — без оплаты</div>
           <a href="https://t.me/kozhev83" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-[hsl(270,80%,65%)] via-[hsl(320,80%,65%)] to-[hsl(180,80%,55%)] text-white font-oswald font-bold px-8 py-3.5 rounded-xl hover:scale-105 transition-transform glow-purple text-lg">
             Запустить бота
