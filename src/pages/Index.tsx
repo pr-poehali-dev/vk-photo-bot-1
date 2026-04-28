@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Icon from "@/components/ui/icon";
+import ProductCard from "@/components/ProductCard";
 
 const GALLERY_IMAGES = [
   {
@@ -452,6 +453,9 @@ export default function Index() {
           </div>
         )}
       </main>
+
+      {/* Product Card */}
+      <ProductCard />
 
       {/* Bottom CTA */}
       <div className="max-w-2xl mx-auto px-4 pb-10">
